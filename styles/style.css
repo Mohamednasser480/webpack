@@ -1,0 +1,353 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    overflow: none;
+}
+.my-nav{
+    text-transform: uppercase;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: 5;
+}
+a{
+    letter-spacing: 0.15rem;
+}
+.my-nav a , .my-nav h1{
+    color:#fff;   
+    transition: 0.5s all;
+    margin-right: 8px;
+}
+.my-nav a:hover, .icon:hover{
+    color: #9fc4ce ;
+}
+.book-btn{
+    padding: 10px 30px;
+    background-color: #fff;
+    color:#252525;
+    border: 2px solid #fff;
+    font-weight: 500;
+}
+.book-btn:hover{
+    background-color:transparent;
+    color:#fff;
+    transition: 1s all;
+}
+.icon{
+    font-size: 14px;
+    color:white;
+    margin: 0px 6px;
+    cursor: pointer;
+    padding: 3px 0px;
+}
+.my-nav a:hover .underline{
+    width:85%;
+    left:0;
+}
+.my-nav li{
+    position: relative;
+}
+.underline{
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  background-color: #9fc4ce;
+  transition: all 0.5s;
+}
+.home{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    position: relative;
+}
+.carousel-item img{
+    height: 100vh;
+    width:100vw;
+}
+.layer{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3); 
+    position: absolute;
+    top:0;
+}
+.slider-content{
+    color:#fff;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-content h1{
+    font-size: 108px;
+    letter-spacing: 0.3rem;
+    font-family: Lora, serif;
+
+}
+.contactus{
+    color:#fff;
+    text-decoration: none;
+    border-bottom: 2px white solid;
+    padding-bottom: 3px;
+    padding-top:30px;
+}
+.contactus:hover{
+    color: #9fc4ce;
+    border-color: #9fc4ce;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.welcome-section img{
+    width:100%;
+    padding-top:7px;
+}
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:#252525;
+    font-weight: 500;
+}
+.subtitle{
+    margin-bottom: 16px;
+    font-family: Lora, serif;
+    font-size: 50px;
+}
+.btn-style{
+    padding: 12px 32px;
+    border: 2px solid #9fc4ce;
+    background-color: #9fc4ce;
+    color:#fff;
+    margin-top:20px;
+    text-transform: uppercase;
+}
+
+.welcome-content p{
+    text-align: center;
+}
+.btn-style:hover{
+    background-color: transparent;
+    color:#9fc4ce;
+    transition: 0.7s all;
+}
+
+.layer-come{
+    width:100%;
+    height:50vh;
+    background-color: rgba(0,0,0,0.5); 
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.come{
+    background-image: url(https://matchthemes.com/demowp/caverta/wp-content/uploads/parallax-bkg1.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center center;
+    color:#fff; 
+    position: relative;
+}
+.come p{
+    font-weight: 500;
+}
+.come h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu{
+    color:#252525;
+}
+.section-title{
+    text-transform: uppercase;
+    color:#9fc4ce;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+.menu ul{
+    list-style: none;
+    margin-top: 100px;
+}
+.menu li{
+    text-decoration: none;
+    color:#252525;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu li:hover{
+    color: #9fc4ce;
+    transition: 0.8s all;
+    font-weight: bold;
+}
+
+.menu-item h3{
+    color:#252525;
+    font-size:16px;
+    font-weight: bold;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #999 dotted;
+    padding-bottom: 20px;
+    margin: 20px 10px;
+}
+.contact{
+    color:#252525;
+}
+.contact-content h2{
+    padding: 30px 0px;
+}
+.form input, .form textarea{
+    width:100%;
+    border: none;
+    background-color: #f2f2f2;
+    padding:13px 13px;
+    margin-bottom: 35px;
+
+}
+.form input:focus, .form textarea:focus{
+    border: 2px solid #252525;
+    background-color:#f2f2f2;
+}
+.form-control:focus,.is-invalid:focus{
+    box-shadow: none !important;
+}
+.is-invalid:focus{
+    border: 1px solid red; 
+}
+.is-valid:focus{
+    border: 1px solid #252525 !important; 
+}
+.form input::placeholder, .form textarea::placeholder{
+    color:#252525;
+}
+.form{
+    margin: 50px 0px;
+}
+footer{
+    background-color: black;
+}
+footer h2{
+    color:#fff;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.15rem;
+}
+footer p{
+    color:#999999;
+    margin-bottom: 24px;
+}
+footer a{
+    text-decoration: none;
+    color:#999999;
+}
+footer a:hover{
+    color: #9fc4ce ;
+    transform: 0.8s all;
+}
+.designedby{
+    font-size: 13px;
+}
+.imgs img{
+    width: 100%;
+}
+
+.booking{
+    background-image: url(https://matchthemes.com/demowp/caverta/wp-content/uploads/parallax-2.jpg);
+}
+
+.feedback{
+    background-image: url(https://matchthemes.com/demowp/caverta/wp-content/uploads/parrallax-3.jpg);
+    height: 80vh;
+    font-size: 20px;
+}
+.feedback .layer-come{
+    height: 100%;
+}
+.feedback h2{
+    font-size: 55px;
+}
+.feedback h4{
+    text-align: center;
+    padding: 15px 0px;
+    font-family: 'Lora', serif;
+
+}
+.by div{
+    background-color: #eee;
+    width: 35px;
+    height: 1px;
+    margin: 20px auto ;
+    
+
+}
+.by h5{
+    font-weight: 600;
+    font-size: 12px;
+}
+.by p{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:762px ){
+    .my-nav{
+        background-color: #252525 !important;
+    }
+    .my-nav button{
+        padding: 6px 12px;
+    }
+    .subtitle{
+        font-size: 27px;
+    }
+    .come h2{
+        text-align: center;
+    }
+    .section-title{
+        text-align: center;
+        font-size: 17px;
+    }
+    .feedback h2{
+        font-size: 23px;
+    }
+    .feedback p{
+        font-size: 12px;
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li{
+        margin: 10px 0px;
+    }
+    .menu-item p{
+        font-size: 13px !important;
+    }
+    .menu-item{
+        text-align: center;
+        width: 90%;
+    }
+    .menu-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu p{
+        font-size: 15px;
+    }
+}

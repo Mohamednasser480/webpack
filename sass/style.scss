@@ -1,0 +1,71 @@
+$base-color: orange;
+header{
+    background-color:$base-color;
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: 180px;
+        border-radius: 50%;
+        margin: 20px 0px;
+    }
+}
+.right{
+    /* background-color: tomato; */
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    h1{
+        font-size: 25px;
+        font-weight: 800;
+        text-align: center;
+    }
+    p{
+        font-size: 17px;
+        display: inline-block;
+    }
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.left{
+    /* background-color: brown; */
+    padding-left:50px;
+    h1{
+        font-size: 30px;
+        font-weight:800;
+        background-color: $base-color;
+        width: 350px;
+        padding:8px;
+        color:#eee;
+    }
+    h3{
+        font-size: 25px;
+
+    }
+}
+
+
+
+@mixin progressColor($value){
+     @if($value < 50) {
+        background-color: red;
+        } @else if ($value < 80 ) {
+            background-color: skyblue;
+        } 
+    @else {
+        background-color: orange;
+    }
+}
+#english::-webkit-progress-value {
+    @include progressColor(75);
+} 
+#german::-webkit-progress-value {
+    @include progressColor(25);
+}
+#spanish::-webkit-progress-value {
+    @include progressColor(90);
+}
+
